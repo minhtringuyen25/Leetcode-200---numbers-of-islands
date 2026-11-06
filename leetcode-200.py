@@ -67,16 +67,6 @@ def tim_vgd(hang):
         if not la_dat(hang[co]):
             co  += 1
             continue
-def tim_vgd(hang):
-    cac_vgd = []          # danh sách vgd(vùng gặp đất) của hàng này, ban đầu rỗng
-    so_cot = len(hang)    # số cột của hàng này
-    co = 0                # co là cột đang xét, đi từ trái sang phải
- 
-    while co < so_cot:
-        # Gặp nước thì bỏ qua, sang cột kế tiếp
-        if not la_dat(hang[co]):
-            co  += 1
-            continue
  
         # Gặp đất:cột này là điểm bắt đầu của một vgd
         a = co

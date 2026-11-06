@@ -52,18 +52,6 @@
 
 using namespace std;  // để viết vector, set, cout thay cho std::vector, std::set, std::cout
 
-int main() {
-    vector<vector<int>> quan_dao = {
-        {1, 1, 1, 1, 1, 0, 0, 0, 0, 0},
-        {1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
-        {1, 0, 1, 0, 1, 0, 0, 1, 1, 0},
-        {1, 0, 0, 0, 1, 0, 0, 0, 0, 0},
-        {1, 1, 1, 1, 1, 0, 0, 0, 1, 0},
-        {0, 0, 0, 0, 0, 1, 0, 0, 1, 0},
-        {1, 0, 1, 1, 0, 0, 0, 1, 1, 0},
-        {1, 0, 1, 1, 0, 0, 0, 0, 0, 0}
-    };  // 7 đảo
-
 // Kiểu dữ liệu cho một vgd (bản Python dùng dictionary, C++ dùng struct)
 //   a    : cột bắt đầu của đoạn đất
 //   b    : cột kết thúc của đoạn đất
@@ -198,6 +186,18 @@ int dem_so_dao(const vector<vector<int>>& quan_dao) {
     // B4: hết ma trận, so_dao là số đảo
     return so_dao;
 }
+
+int main() {
+    vector<vector<int>> quan_dao = {
+        {1, 1, 1, 1, 1, 0, 0, 0, 0, 0},
+        {1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+        {1, 0, 1, 0, 1, 0, 0, 1, 1, 0},
+        {1, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+        {1, 1, 1, 1, 1, 0, 0, 0, 1, 0},
+        {0, 0, 0, 0, 0, 1, 0, 0, 1, 0},
+        {1, 0, 1, 1, 0, 0, 0, 1, 1, 0},
+        {1, 0, 1, 1, 0, 0, 0, 0, 0, 0}
+    };  // 7 đảo
 
     cout << "So dao: " << dem_so_dao(quan_dao) << endl;
     return 0;

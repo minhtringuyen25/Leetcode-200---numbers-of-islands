@@ -227,6 +227,6 @@ int main() {
         {1, 0, 1, 1, 0, 0, 0, 0, 0, 0}
     };  // 7 islands
 
-    cout << "Number of islands: " << dem_so_dao(quan_dao) << endl;
+    cout << "Number of islands is " << dem_so_dao(quan_dao) << endl;
     return 0;
 }

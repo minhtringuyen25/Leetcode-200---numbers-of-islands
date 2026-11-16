@@ -183,4 +183,4 @@ def dem_so_dao(quan_dao):
     return so_dao
 
 
-print("Number of islands:", dem_so_dao(quan_dao))
+print("Number of islands is:", dem_so_dao(quan_dao))
